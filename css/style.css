@@ -1,0 +1,268 @@
+* {
+  background-color: #0b2027;
+}
+
+.logo {
+  display: flex;
+  height: 232px;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  position: absolute;
+  z-index: -1;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 600px;
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 400px;
+    height: 116px;
+  }
+}
+
+.navbar {
+  background-color: black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  background-color: black;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #70a9a1;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar a {
+    font-size: 20px;
+  }
+}
+
+
+@keyframes example {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar a:hover {
+  animation: example 0.3s ease-in-out;
+}
+
+.navbar a.active {
+  color: #cfd7c7;
+}
+
+
+.image-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.paragraph-style {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #cfd7c7;
+}
+
+#box-container {
+  border: 3px solid #cfd7c7;
+  padding: 5px;
+  width: 40%;
+  height: auto;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#box-container img {
+  padding: 15px;
+  float: left;
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+#box-container p {
+  padding: 1px;
+  text-align: justify;
+  margin: 8px;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.footer a {
+  background-color: black;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #70a9a1;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+}
+
+.footer a:hover {
+  animation: example 0.3s ease-in-out;
+}
+
+#picture-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+#picture-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+#picture-container img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+#picture-container img:hover {
+  transform: scale(1.2);
+}
+
+.personnel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.personnel-item {
+  text-align: center;
+  width: 300px;
+  margin: 10px;
+}
+
+.personnel-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.personnel-item img:hover {
+  transform: scale(2.0);
+}
+
+.personnel-item p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #cfd7c7;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.personnel-item h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  color: #70a9a1;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.large-image {
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.text-below {
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: #70a9a1;
+  width: 80%;
+  max-width: 800px;
+}
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #40798c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type="text"], input[type="tel"], input[type="email"] {
+  background-color: #eee;
+  border: 1px solid black;
+  padding: 10px;
+}
+textarea {
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+  font-family: 'Work Sans', sans-serif;
+  resize: none;
+}
